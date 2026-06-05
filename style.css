@@ -589,3 +589,64 @@ section {
   40% { transform: translateY(-8px); }
   100% { transform: translateY(0); }
 }
+.journey {
+  margin-top: 2rem;
+}
+
+.journey-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+.journey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.journey-item {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1rem;
+  background: rgba(168, 85, 247, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.journey-item:hover {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateX(4px);
+}
+
+.journey-item.highlight {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.journey-icon {
+  font-size: 1rem;
+}
+
+.journey-text {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.journey-item.highlight .journey-text {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.journey-arrow {
+  color: rgba(168, 85, 247, 0.4);
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
