@@ -985,3 +985,50 @@ section {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(168, 85, 247, 0.15);
 }
+@media (max-width: 768px) {
+
+  
+  nav ul {
+    gap: 1rem;
+  }
+
+
+  #hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 6%;
+    text-align: center;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+ 
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+
+ 
+  .projects-grid {
+    flex-direction: column;
+  }
+
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+  .journey-item {
+    width: 100%;
+  }
+}
