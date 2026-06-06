@@ -1031,4 +1031,29 @@ section {
   .journey-item {
     width: 100%;
   }
+  #hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .photo-wrapper {
+    width: 320px;
+    height: 320px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-desc {
+    margin: 0 auto 1.5rem;
+  }
 }
