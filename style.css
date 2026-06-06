@@ -650,3 +650,168 @@ section {
   font-size: 0.9rem;
   padding-left: 1rem;
 }
+#projects {
+  padding: 6rem 6%;
+}
+
+#projects h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(168, 85, 247, 0.04);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+   flex: 1;
+  min-width: 0;
+}
+
+.project-card:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(168, 85, 247, 0.12);
+}
+
+.project-preview {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+
+.project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+
+.project-preview.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(168, 85, 247, 0.06);
+  gap: 0.5rem;
+}
+
+.project-preview.placeholder span {
+  font-size: 2.5rem;
+}
+
+.project-preview.placeholder p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-info h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project-info p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.3rem 0.8rem;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: var(--accent);
+}
+
+.wip-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.7rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 100px;
+  color: var(--accent);
+}
+.project-preview-link {
+  display: block;
+  overflow: hidden;
+}
+
+.project-preview-link:hover img {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+.projects-subtitle{
+    color: #9ca3af;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
