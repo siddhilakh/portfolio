@@ -68,7 +68,7 @@ nav ul li a:hover {
   color: var(--accent);
 }
 #hero {
-  min-height: 100vh;
+  min-height: 85vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -265,7 +265,7 @@ h1 span {
 .chip-5 { bottom: 65px; left: 0px; }
 .chip-4 { bottom: 65px; right: 0px; }
 #about {
-  padding: 6rem 6%;
+  padding: 5rem 6%;
   position: relative;
   overflow: hidden;
 }
@@ -295,6 +295,7 @@ h1 span {
   font-weight: 400;
   margin-bottom: 1.2rem;
   color: var(--white);
+  
 }
 
 #about h2 span {
@@ -651,7 +652,9 @@ section {
   padding-left: 1rem;
 }
 #projects {
-  padding: 6rem 6%;
+  padding: 2rem 6%;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 #projects h2 {
@@ -816,7 +819,7 @@ section {
     margin-bottom: 32px;
 }
 #achievements {
-  padding: 6rem 6%;
+  padding: 2rem 6%;
 }
 
 #achievements h2 {
@@ -927,7 +930,7 @@ section {
   border-color: var(--accent);
 }
 #contact {
-  padding: 6rem 6%;
+  padding: 2rem 6%;
   text-align: center;
 }
 
@@ -998,6 +1001,7 @@ section {
     padding: 2rem 6%;
     text-align: center;
   }
+  
 
   .hero-right {
     display: none;
@@ -1011,6 +1015,7 @@ section {
   .about-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
+    
   }
 
   .about-grid-2x2 {
@@ -1056,4 +1061,124 @@ section {
   .hero-desc {
     margin: 0 auto 1.5rem;
   }
+}
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+  padding: 2rem 6% 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+#skills h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+#skills h2 span {
+  color: var(--accent);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #a855f7
+  );
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(168,85,247,0.4);
+}
+
+.skill-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.skill-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skill-items span {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.skill-items i {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #skills h2 {
+    font-size: 2.3rem;
+  }
+}
+/* Floating Animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
